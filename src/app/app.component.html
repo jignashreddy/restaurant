@@ -1,9 +1,10 @@
-<app-header (featureSelected)="Onselect($event)"></app-header>
+<app-header ></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="fSelected=='Recipes'"></app-recipes>
-      <app-shopping-list *ngIf="fSelected=='Shopping'"></app-shopping-list>
+      <router-outlet></router-outlet>
+      <!-- <app-recipes *ngIf="fSelected=='Recipes'"></app-recipes>
+      <app-shopping-list *ngIf="fSelected=='Shopping'"></app-shopping-list> -->
     </div>
   </div>
 </div>
