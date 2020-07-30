@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Restaurant';
+  fSelected:any="Recipes";
+
+  Onselect(feature:string){
+    this.fSelected=feature;
+  }
 }
